@@ -14,3 +14,7 @@ def laborer_logout(request):
     del request.session['laborer']
     request.session.flush()
     return redirect('common:login')
+
+
+def resmb(request):
+    return render(request,'resmb.html')
